@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard | DRAFTLY</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <a href="index.html" class="logo">DRAFTLY.</a>
+
+        <div class="nav-links">
+            <a href="index.html">Explore</a>
+            <a href="create-blog.html">Create article</a>
+        </div>
+
+        <button class="btn btn-outline" data-logout>
+            Log out
+        </button>
+
+    </nav>
+
+    <main class="container">
+
+        <section class="page-header">
+
+            <span class="eyebrow">YOUR SPACE</span>
+
+            <h1>Welcome, <span id="welcomeName"></span>.</h1>
+
+            <p>Manage your stories and keep creating.</p>
+
+            <div class="dashboard-actions">
+
+                <a href="create-blog.html" class="btn btn-primary">
+                    + Write an article
+                </a>
+
+                <a href="index.html" class="btn btn-outline">
+                    Explore stories
+                </a>
+
+            </div>
+
+        </section>
+        <!-- Profile Summary -->
+
+<section class="profile-summary">
+
+    <div class="profile-avatar" id="profileInitial">D</div>
+
+    <div class="profile-details">
+        <span class="overview-label">YOUR PROFILE</span>
+        <h3 id="profileName">User</h3>
+        <p id="profileEmail">Email address</p>
+    </div>
+
+</section>
+<!-- Dashboard Overview -->
+
+<section class="dashboard-overview">
+
+    <div class="overview-card">
+        <span class="overview-label">TOTAL ARTICLES</span>
+        <h2 id="totalArticleCount">0</h2>
+        <p>All your stories</p>
+    </div>
+
+    <div class="overview-card">
+        <span class="overview-label">PUBLISHED</span>
+        <h2 id="publishedCount">0</h2>
+        <p>Stories shared</p>
+    </div>
+
+    <div class="overview-card">
+        <span class="overview-label">DRAFTS</span>
+        <h2 id="draftCount">0</h2>
+        <p>Work in progress</p>
+    </div>
+
+</section>
+        <section class="section">
+
+            <div class="section-heading">
+                <h2>Your articles</h2>
+
+                <p class="article-meta">
+                    Published: <span id="blogCount">0</span>
+                </p>
+            </div>
+
+            <div class="article-grid" id="dashboardGrid"></div>
+
+        </section>
+
+    </main>
+
+    <div class="modal" id="articleModal">
+
+        <div class="modal-content">
+
+            <button class="modal-close" data-close-modal>
+                &times;
+            </button>
+
+            <span class="article-category" id="modalCategory"></span>
+
+            <h2 id="modalTitle"></h2>
+
+            <p class="article-meta" id="modalAuthor"></p>
+
+            <div class="modal-body" id="modalBody"></div>
+
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        © 2026 DRAFTLY. A space for every story.
+    </footer>
+
+</body>
+</html>

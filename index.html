@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DRAFTLY | Stories Worth Your Time</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+    <a href="index.html" class="logo">
+        DRAFTLY<span>.</span>
+    </a>
+
+    <div class="nav-links">
+        <a href="index.html" class="nav-active">Home</a>
+        <a href="#stories">Explore</a>
+        <a href="#topics">Topics</a>
+        <a href="#about">About</a>
+    </div>
+
+    <div class="nav-actions">
+        <a href="login.html" class="btn btn-outline">Log in</a>
+        <a href="register.html" class="btn btn-primary">Start writing →</a>
+    </div>
+
+</nav>
+
+    <main>
+
+        <section class="hero">
+            <div class="container">
+
+                <span class="eyebrow">A SPACE FOR EVERY STORY</span>
+
+                <h1>Stories worth your time.</h1>
+
+                <p>
+                    Discover fresh perspectives, share your ideas,
+                    and explore stories from people around the world.
+                </p>
+
+                <a href="register.html" class="btn btn-primary">
+                    Start your journey →
+                </a>
+
+            </div>
+        </section>
+        <!-- Editor's Spotlight -->
+
+<section class="spotlight-section container">
+
+    <div class="spotlight-label">
+        <span class="eyebrow">EDITOR'S SPOTLIGHT</span>
+    </div>
+
+    <div class="spotlight-card">
+
+        <div class="spotlight-content">
+
+            <span class="article-category">TECHNOLOGY</span>
+
+            <h2>The Future of Artificial Intelligence</h2>
+
+            <p>
+                How artificial intelligence is changing the way
+                we live, work, and think. Explore the possibilities
+                of a world shaped by intelligent technology.
+            </p>
+
+            <div class="spotlight-meta">
+                <span>By Alex Morgan</span>
+                <span>November 12, 2026</span>
+                <span>5 min read</span>
+            </div>
+
+            <a href="#stories" class="btn btn-primary">
+                Discover the story →
+            </a>
+
+        </div>
+
+        <div class="spotlight-visual">
+            <div class="spotlight-visual-text">
+                <span>01 / IDEAS</span>
+                <h3>THE<br>FUTURE<br>IS NOW.</h3>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+        <section class="section container" id="stories">
+
+            <div class="section-heading">
+                <h2>Explore stories</h2>
+
+                <input
+                    type="search"
+                    id="searchInput"
+                    class="search-box"
+                    placeholder="Search articles..."
+                >
+            </div>
+
+            <div class="topic-list" id="topics">
+
+                <button class="topic-tag active" data-category="All">
+                    All stories
+                </button>
+
+                <button class="topic-tag" data-category="Technology">
+                    Technology
+                </button>
+
+                <button class="topic-tag" data-category="Design">
+                    Design
+                </button>
+
+                <button class="topic-tag" data-category="Education">
+                    Education
+                </button>
+
+                <button class="topic-tag" data-category="Lifestyle">
+                    Lifestyle
+                </button>
+
+                <button class="topic-tag" data-category="Travel">
+                    Travel
+                </button>
+
+                <button class="topic-tag" data-category="Culture">
+                    Culture
+                </button>
+
+            </div>
+
+            <div class="article-grid" id="articleGrid"></div>
+
+        </section>
+        <!-- About Section -->
+
+<section class="about-section container" id="about">
+
+    <div class="about-content">
+
+        <span class="eyebrow">ABOUT DRAFTLY</span>
+
+        <h2>Every story deserves a place.</h2>
+
+        <p>
+            DRAFTLY is a space for curious minds, creative thinkers,
+            and storytellers to share ideas and discover new perspectives.
+        </p>
+
+        <p>
+            Whether you're sharing what you've learned, exploring
+            something new, or simply putting your thoughts into words,
+            your story belongs here.
+        </p>
+
+        <a href="register.html" class="btn btn-primary">
+            Start writing →
+        </a>
+
+    </div>
+
+</section>
+
+        <section class="section container">
+
+            <div class="section-heading">
+                <h2>Your story belongs here.</h2>
+
+                <a href="register.html" class="btn btn-primary">
+                    Become a writer →
+                </a>
+            </div>
+
+        </section>
+
+    </main>
+
+    <div class="modal" id="articleModal">
+
+        <div class="modal-content">
+
+            <button class="modal-close" data-close-modal>
+                &times;
+            </button>
+
+            <span class="article-category" id="modalCategory"></span>
+
+            <h2 id="modalTitle"></h2>
+
+            <p class="article-meta" id="modalAuthor"></p>
+
+            <div class="modal-body" id="modalBody"></div>
+
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        © 2026 DRAFTLY. A space for every story.
+    </footer>
+
+</body>
+</html>
